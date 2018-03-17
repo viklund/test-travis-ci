@@ -12,7 +12,8 @@ export GIT_COMMITER_NAME='Johan Viklund'
 
 git fetch --depth=50 origin refs/heads/master:master
 git checkout master
-git merge "$TRAVIS_COMMIT" || exit
+git merge --no-ff "$TRAVIS_COMMIT" || exit
 echo "MERGED"
+git fetch
 PAGER=cat git log --graph --oneline --decorate --all
 git push -q https://$GITHUB_TOKEN:x-oauth-basic@github.com/NBISweden/K9-WGS-Pipeline.git master

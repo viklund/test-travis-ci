@@ -16,4 +16,4 @@ git merge --no-ff "$TRAVIS_COMMIT" || exit
 echo "MERGED"
 git fetch
 PAGER=cat git log --graph --oneline --decorate --all
-git push -q https://$GITHUB_TOKEN:x-oauth-basic@github.com/NBISweden/K9-WGS-Pipeline.git master
+git push -q https://$GITHUB_TOKEN:x-oauth-basic@github.com/NBISweden/K9-WGS-Pipeline.git master:refs/heads/master

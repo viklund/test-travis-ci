@@ -3,7 +3,7 @@ appdirs==1.4.0
 certifi==2018.1.18
 chardet==3.0.4
 idna==2.6
-Mako==1.0.6
+Mako==1.2.2
 MarkupSafe==0.23
 numpy==1.12.0
 packaging==16.8
